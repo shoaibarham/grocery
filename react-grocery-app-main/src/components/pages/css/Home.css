@@ -1,0 +1,94 @@
+.page-home {
+  @apply bg-neutral-dark text-white text-center flex items-center justify-center;
+  background: radial-gradient(#0c597b, #0c4760);
+}
+
+.page-home #root {
+  min-height: auto;
+}
+
+.page-home .rg-logo {
+  @apply m-0 pt-0;
+}
+
+.page-home .rg-logo a {
+  @apply flex place-content-center transform scale-105;
+}
+
+.page-home .rg-header {
+  @apply border-0 py-1 my-2 relative mt-9;
+  background: none;
+}
+
+.page-home .rg-header .container {
+  @apply lg:flex-col;
+}
+.page-home .rg-decorations {
+  @apply hidden;
+}
+
+.page-home .rg-footer {
+  @apply w-full border-0 mx-auto mt-1 py-1 relative bg-transparent;
+}
+
+.page-home .rg-footer a {
+  @apply font-normal text-opacity-20 transition-all;
+}
+
+.page-home .rg-footer::before {
+  display: none;
+}
+
+.page-home .rg-main {
+  @apply flex flex-col mb-1 relative;
+}
+
+.page-home .rg-signin,
+.page-home .rg-signin fieldset {
+  @apply flex flex-col relative;
+}
+
+.page-home .rg-main p {
+  @apply text-white;
+}
+
+.page-home .rg-main h3 {
+  @apply w-64 self-center relative z-10 h-11 overflow-visible mt-4 mb-0;
+  transform: rotate(0.5deg);
+}
+
+.page-home .rg-main h3 span {
+  @apply absolute bg-primary text-neutral-dark inset-0 p-2 font-bold text-xl;
+  transform: rotate(-0.5deg);
+}
+.page-home .rg-main .btn-link {
+  @apply mt-3 mb-4;
+}
+
+.page-home .rg-main h3::before {
+  content: '';
+  z-index: -1;
+  @apply bg-secondary absolute transform rotate-1 scale-105 inset-0;
+}
+
+.page-home .fieldset {
+  @apply mt-1.5;
+}
+
+.page-home .rg-signin .form-label {
+  @apply text-primary font-bold mb-0.5 text-base mr-0 pr-0;
+  font-family: var(--font-accent);
+  text-shadow: 0px 0px 0.5rem rgba(0, 0, 0, 0.3);
+}
+
+.page-home .rg-signin input {
+  @apply text-center py-1.5 text-sm;
+}
+
+.page-home .btn-outline {
+  @apply hover:shadow-md;
+}
+
+.page-home .btn-outline:hover {
+  background-color: #126689;
+}

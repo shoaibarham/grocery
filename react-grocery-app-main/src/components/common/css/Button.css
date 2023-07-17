@@ -1,0 +1,85 @@
+.btn {
+  @apply py-2 px-4 rounded-lg cursor-pointer transition-all bg-primary text-neutral-dark font-bold text-base;
+}
+.btn:hover {
+  background-color: #9fff40;
+}
+
+.btn-block {
+  @apply w-full mt-2 mb-1 py-2 rounded font-bold;
+}
+
+.btn-block .fas {
+  @apply pr-2;
+}
+
+.btn.icon {
+  @apply text-xl bg-transparent;
+  color: var(--color-neutral-50);
+}
+
+.btn-sm {
+  @apply py-1 px-3 text-sm;
+  transform: translateY(-3px);
+}
+
+.btn-outline {
+  @apply border border-secondary bg-white normal-case text-secondary font-bold hover:bg-secondary hover:text-white text-sm;
+}
+
+.btn-link .fas {
+  @apply pr-1;
+}
+
+.btn-block .fas,
+.btn-outline .fas,
+.btn-outline .fab {
+  @apply pr-2;
+}
+
+.btn.error {
+  @apply text-red-700 border-red-500;
+}
+
+.btn.error:hover {
+  @apply text-white bg-red-500;
+}
+
+.btn-link {
+  @apply m-0 p-0 underline mt-3 bg-transparent normal-case hover:bg-transparent text-sm font-normal;
+  text-decoration-thickness: 0.125rem;
+  text-underline-offset: 1.5px;
+  transition: all 0.2s;
+}
+
+.btn-link.light {
+  @apply transform hover:scale-105;
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration-color: rgba(255, 255, 255, 0.2);
+  box-shadow: none;
+}
+.btn-link.light:hover,
+.btn-link.light:focus {
+  @apply text-white font-bold;
+  text-decoration-color: rgba(255, 255, 255, 0.8);
+}
+
+.btn-link.error {
+  @apply hover:bg-transparent hover:text-red-600;
+  text-decoration-color: #fca5a5;
+}
+
+.btn-link.error:focus {
+  @apply bg-transparent text-red-600 font-bold;
+  box-shadow: none;
+}
+
+.btn-quantity {
+  @apply bg-transparent rounded-full border text-xs py-1 px-2 m-0;
+  border-color: var(--color-neutral-50);
+}
+
+.btn-icon {
+  @apply p-0 bg-transparent text-xl hover:bg-transparent hover:text-neutral;
+  color: var(--color-neutral-50);
+}
